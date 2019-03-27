@@ -1,0 +1,185 @@
+body{
+  margin: 0;
+  padding: 0;
+
+}
+.contenedor{
+  background:url(fondo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: 100px repeat(11, 1fr);
+  align-items: center;
+}
+#menu{
+  grid-column: 1/14;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: 100px;
+  align-items: center;
+
+}
+#logo{
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+  grid-column: 1/3;
+}
+#menu > a{
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight:100;
+}
+#acerca{
+  grid-column: 11/12;
+
+}
+#contacto{
+  grid-column: 12/13;
+}
+
+#titulo{
+  grid-column: 1/4;
+  grid-row: 4/5;
+  margin: 0;
+  margin-left: 50px;
+  font-size: 70px;
+  font-family: 'Noto Sans', sans-serif;
+  text-align: center;
+}
+.contenedor > h2{
+  font-size: 40px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight:100;
+}
+
+#restaurantes{
+  margin: 0;
+  grid-column: 1/3;
+  grid-row: 5/6;
+  margin-left: 50px;
+  text-align: right;
+}
+
+#hoteles{
+  margin: 0;
+  grid-column:3/5 ;
+  grid-row: 5/6;
+  text-align: center;
+}
+#entretenimiento{
+  margin: 0;
+  grid-column: 5/8;
+  grid-row: 5/6;
+}
+
+#descarga{
+  grid-column: 3/6;
+  grid-row: 7/8;
+  text-align: center;
+  background-color: #3BB4C1;
+  border-radius: 60px;
+  width: 329px;
+  height: 62px;
+}
+#descarga2{
+  margin-top: 15px;
+}
+#descarga2 > a{
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+
+
+@media all and (max-width: 1400px) {
+  .contenedor{
+    background-position: 80%;
+  }
+  #hoteles{
+    grid-row: 6/7;
+    grid-column: 1/3;
+    margin-left: 50px;
+    text-align:left;
+  }
+  #entretenimiento{
+    grid-row: 7/8;
+    grid-column: 1/5;
+    margin-left: 50px;
+  }
+  #descarga{
+    grid-row: 8/9;
+    grid-column: 1/5;
+    margin-left: 50px;
+  }
+}
+@media all and (max-width: 550px){
+  .contenedor{
+    background: url(fondomovil.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-items: center;
+  }
+  #logo{
+  grid-column: 1/14;
+  }
+  #acerca{
+    grid-column: 2/7;
+  }
+  #contacto{
+    grid-column: 8/13;
+  }
+  #titulo{
+    font-size: 34px;
+    grid-column: 1/14;
+    grid-row: 3/4;
+    text-align: center;
+    margin: 0;
+  }
+  #restaurantes{
+    margin: 0;
+    grid-column: 1/14;
+    grid-row: 4/5;
+    font-size: 20px;
+    text-align: center;
+  }
+  #hoteles{
+    margin: 0;
+    grid-column: 1/14;
+    grid-row: 5/6;
+    font-size: 20px;
+    text-align: center;
+  }
+  #entretenimiento{
+    margin: 0;
+    grid-column: 1/14;
+    grid-row: 6/7;
+    font-size: 20px;
+    text-align: center;
+  }
+  #descarga{
+    grid-column:1/14;
+    grid-row: 12/13;
+    margin:0;
+    width: 196px;
+    height: 40px;
+  }
+  #descarga2{
+    margin: 0;
+    margin-top: 10px;
+  }
+  #descarga2 > a{
+    font-size: 14px;
+  }
+
+}
